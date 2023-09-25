@@ -16,8 +16,16 @@ body {
 
 nav {
     font-weight: lighter;
-    padding: 10px 5em;
-    background-color: white;
+    padding: 1em 5em;
+    background: linear-gradient(to bottom, rgb(14, 14, 171) , transparent);
+    border-bottom: 2px solid white;
+}
+nav h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: white;
+    -webkit-text-fill-color: whitesmoke;
+
 }
 
 body>div {
@@ -105,4 +113,33 @@ body>div .todoCardText>div,
 }
 .todoCard .delete-btn:hover{
     background-color: rgb(213, 4, 4);
+}
+
+@media (max-width:970px) {
+    
+    body>div {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .container>form {
+        width: 80%;
+        margin: auto;
+        gap: 15px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    body> div > div:nth-child(2){
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width:560px) {
+    nav{
+        text-align: center;
+    }
+    .todoCardText > div > p:nth-child(2),
+    .todoCard > div > p:nth-child(2){
+        display: none;
+    }    
 }
