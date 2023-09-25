@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const title = titleInput.value;
         const description = descriptionInput.value;
 
-        if (title.trim() !== "" && description.trim() !== "") {
+        // if (title.trim() !== "" && description.trim() !== "") {
+        if (title.trim() !== "") {
             const todoItem = document.createElement("div");
             todoItem.classList.add("todo");
             todoItem.innerHTML = `

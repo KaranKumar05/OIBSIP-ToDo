@@ -11,7 +11,6 @@ body {
     flex-direction: column;
     gap: 2em;
     background-color: rgb(20, 20, 50);
-    overflow: hidden;
 }
 
 nav {
@@ -139,7 +138,8 @@ body>div .todoCardText>div,
         text-align: center;
     }
     .todoCardText > div > p:nth-child(2),
-    .todoCard > div > p:nth-child(2){
+    .todoCard > div > p:nth-child(2),
+    #todo-form > textarea{
         display: none;
     }    
 }
